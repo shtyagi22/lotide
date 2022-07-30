@@ -28,17 +28,3 @@ const results3 = takeUntil(data3, x => x >= 7);
 console.log(results3);
 
 
-/***const takeUntil = (parameter1, aFunction) => {    
-  const results = []    
-  for(let i=0; i<parameter1.length, i++){     
-    const value = parameter1[i]     
-     if(aFunction(value)){       
-      // stop stop stop!!!!!!        
-      return results      }
-      else 
-      {         results.push(value)      }  
-      } }     
-      const aFunction = (oneParameter) => true | false    
-      const oranges = [good, good, good, good, bad, good , bad]  
-      const getOnlyGoodOranges = (orange) => orange === bad;   
-      const goodOrangesOnly = takeUntil(oranges, getOnlyGoodOranges)***/
