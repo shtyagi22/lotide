@@ -12,22 +12,23 @@ const eqArrays = function (arr1, arr2) {
   }
 }
 
-const assertArrayEqual = function (arr1, arr2) {
-  if (eqArrays(arr1, arr2) === true) {
-    console.log(`Assertion Passed: ${arr1} === ${arr2}`)
+const assertArraysEqual = function (actual, expected) {
+  if (actual === expected) {
+    console.log(`Assertion Passed: ${actual} === ${expected}`)
   }
   else {
-    console.log(`Assertion Failed: ${arr1} !== ${arr2}`)
+    console.log(`Assertion Failed: ${actual} !== ${expected}`)
   }
 }
 
-const without = function (arr1, arr2){
+
+const without = function (arr1, arr2) {
   let withoutArray = []
-  for (i = 0; i < arr1.length; i++){
-    withoutArray = arr1.filter(function(fil){
-    return fil != arr2[i]
-  })
-}
+  for (i = 0; i < arr1.length; i++) {
+    withoutArray = arr1.filter(function (fil) {
+      return fil != arr2[i]
+    })
+  }
   return withoutArray
 }
 
