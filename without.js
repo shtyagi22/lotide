@@ -32,7 +32,7 @@ const without = function (arr1, arr2) {
   return withoutArray
 }
 
-
+module.exports = without;
 
 //console.log(without([1, 2, 3], [1,2])) // => [2, 3]
 //console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
@@ -40,7 +40,7 @@ const without = function (arr1, arr2) {
 const words = ["hello", "world", "lighthouse"];
 console.log(without(words, ["lighthouse"])); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
-assertArrayEqual(words, ["hello", "world", "lighthouse"]);
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
 
 

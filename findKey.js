@@ -20,6 +20,7 @@ const findKey = function (object1, callback) {
 
 
 }
+module.experts = findKey;
 
 
 
